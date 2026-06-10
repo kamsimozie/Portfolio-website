@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — web developer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Your Name</h1>
+      <nav class="nav" id="nav">
+        <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <h2>Hi, I'm Your Name</h2>
+        <p class="lead">I build web applications with HTML, CSS, JavaScript and PHP.</p>
+        <a href="#projects" class="btn">See my work</a>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h3>About Me</h3>
+        <p>Short bio — who you are, what you do, and what you're looking for. Example: Full-stack developer with experience in building modern web apps.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h3>Projects</h3>
+        <div class="grid">
+          <article class="card">
+            <div class="card-image" style="background:#eaeaea;min-height:140px"></div>
+            <h4>Project One</h4>
+            <p>Short description. Tech: HTML, CSS, JS.</p>
+            <a href="#" class="btn btn-sm">View</a>
+          </article>
+
+          <article class="card">
+            <div class="card-image" style="background:#eaeaea;min-height:140px"></div>
+            <h4>Project Two</h4>
+            <p>Short description. Tech: PHP, MySQL.</p>
+            <a href="#" class="btn btn-sm">View</a>
+          </article>
+
+          <article class="card">
+            <div class="card-image" style="background:#eaeaea;min-height:140px"></div>
+            <h4>Project Three</h4>
+            <p>Short description. Tech: React/Node (example).</p>
+            <a href="#" class="btn btn-sm">View</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h3>Skills</h3>
+        <ul class="skills-list">
+          <li>HTML & CSS</li>
+          <li>JavaScript (ES6+)</li>
+          <li>PHP</li>
+          <li>REST APIs</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h3>Contact</h3>
+        <form id="contactForm" action="contact.php" method="post" novalidate>
+          <label>
+            Your name
+            <input type="text" name="name" id="name" required minlength="2" />
+          </label>
+          <label>
+            Your email
+            <input type="email" name="email" id="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" id="message" required minlength="5"></textarea>
+          </label>
+          <button type="submit" class="btn">Send</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — Built with HTML, CSS, JS & PHP</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
