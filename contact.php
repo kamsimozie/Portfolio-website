@@ -87,7 +87,7 @@ flock($fp, LOCK_UN);
 fclose($fp);
 
 // Attempt to send an email notification (may require server mail config)
-$to = 'your-email@example.com'; // change this
+$to = 'your-email@kamsimozie267'; // change this
 $subject = 'New contact message from ' . $name;
 $body = "Name: {$name}\nEmail: {$email}\n\nMessage:\n{$message}\n\nSent: {$entry['created_at']}\nIP: {$entry['ip']}\n";
 $headers = "From: no-reply@" . ($_SERVER['SERVER_NAME'] ?? 'localhost') . "\r\n";
